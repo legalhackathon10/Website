@@ -7,7 +7,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #a0c8d6; /* Pastellblau */
+            background-color: #e8efde; /* Pastellblau */
             color: #000; /* Schwarze Textfarbe */
             margin: 0;
         }
@@ -15,6 +15,7 @@
         .navbar {
             display: flex;
             justify-content: flex-end;
+            align-items: center; /* Zentriert die Kreise vertikal */
             padding: 10px;
             background-color: rgba(255, 255, 255, 0.2); /* Hintergrund mit Transparenz für die Navigationsleiste */
             margin-bottom: 20px; /* Hinzugefügter Abstand nach unten */
@@ -27,14 +28,9 @@
             position: relative;
         }
 
-        /* Entfernen Sie die animierte Linie unter den Links */
-        .navbar a::after {
-            content: "";
-            position: absolute;
-            width: 0;
-            height: 0;
-            left: 0;
-            bottom: -5px;
+        /* Entfernen Sie den blauen Strich unter dem Link */
+        a {
+            text-decoration: none;
         }
 
         .quiz-container {
@@ -104,6 +100,30 @@
             font-weight: bold;
             margin-right: 5px;
         }
+
+        /* Stile für die Kreise */
+        .circle-container {
+            display: flex;
+            align-items: center; /* Zentriert die Kreise vertikal */
+        }
+
+        .circle {
+            width: 30px; /* Kleinerer Durchmesser für die Kreise */
+            height: 30px; /* Kleinerer Durchmesser für die Kreise */
+            background-color: #fff;
+            border-radius: 50%; /* Kreisform */
+            margin-left: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Stile für die Flaggenbilder */
+        .flag {
+            width: 20px;
+            height: 20px;
+            object-fit: cover;
+        }
     </style>
 </head>
 <body>
@@ -117,6 +137,18 @@
         <a href="#">Home</a>
         <a href="#">Über Uns</a>
         <a href="#">Impressum</a>
+        <!-- Fügen Sie die Kreise und Flaggen hier ein -->
+        <div class="circle-container">
+            <div class="circle">
+                <img src="de_flag.png" alt="Deutschland Flagge" class="flag">
+            </div>
+            <div class="circle">
+                <img src="flag2.png" alt="Flagge 2" class="flag">
+            </div>
+            <div class="circle">
+                <img src="flag3.png" alt="Flagge 3" class="flag">
+            </div>
+        </div>
     </div>
 
     <div class="quiz-container">
