@@ -7,13 +7,30 @@
     <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a href="#">Über Uns</a>
+        <a href="#">Impressum</a>
+        <!-- Fügen Sie die Kreise und Flaggen hier ein -->
+        <div class="circle-container">
+            <div class="circle">
+                <img src="de_flag.png" alt="Deutschland Flagge" class="flag">
+            </div>
+            <div class="circle">
+                <img src="flag2.png" alt="Flagge 2" class="flag">
+            </div>
+            <div class="circle">
+                <img src="flag3.png" alt="Flagge 3" class="flag">
+            </div>
+        </div>
+    </div>
     <div id="quiz">
         <h1>Legal Tech Vergleichsportal</h1>
         <div id="question">
-            <p id="question-text">Frage 1: Wie sind Sie versichert?</p>
+            <p id="question-text">Wie sind Sie versichert?</p>
         </div>
         <div id="answers">
-            <input type="radio" name="answer" value="1">Haftpflichtversicherung<br>
+            <input type="radio" name="answer" value="1">Haftpflichtversicherung oder Voll/Teilkasko<br>
             <input type="radio" name="answer" value="2">Rechtsschutzversicherung<br>
         </div>
         <button id="next-button">Nächste Frage</button>

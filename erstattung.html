@@ -7,21 +7,52 @@
     <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
-    <div id="quiz">
-        <h1>Legal Tech Vergleichsportal</h1>
-        <div id="question">
-            <p id="question-text">Frage 2: was wird gewünscht?</p>
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a href="#">Über Uns</a>
+        <a href="#">Impressum</a>
+        <!-- Fügen Sie die Kreise und Flaggen hier ein -->
+        <div class="circle-container">
+            <div class="circle">
+                <img src="de_flag.png" alt="Deutschland Flagge" class="flag">
+            </div>
+            <div class="circle">
+                <img src="flag2.png" alt="Flagge 2" class="flag">
+            </div>
+            <div class="circle">
+                <img src="flag3.png" alt="Flagge 3" class="flag">
+            </div>
         </div>
-        <div id="answers">
-            <input type="checkbox" name="answer" value="E">Erstattung<br>
-            <input type="checkbox" name="answer" value="EW">Ersatzwagen<br>
-            <input type="checkbox" name="answer" value="A">Abschlepper<br>
-            <input type="checkbox" name="answer" value="W">Werkstatt/Reperatur<br>
-
-        </div>
-        <button id="next-button">Nächste Frage</button>
     </div>
-
+    <div class="quiz-container">
+        <div class="logo-container">
+            <div class="logo"><img src="logo.png" alt="Logo von HI Right" height=500px width=500px></div>
+        </div> 
+        <div class="question">
+            <p>Welche Leistungen brauchen Sie?</p>
+        </div>
+        <div class="checkbox-container">
+            <div class="checkbox">
+                <input type="checkbox" id="option1">
+                <label for="option1">Erstattung</label>
+            </div>
+            <div class="checkbox">
+                <input type="checkbox" id="option2">
+                <label for="option2">Ersatzwagen</label>
+            </div>
+            <div class="checkbox">
+                <input type="checkbox" id="option3">
+                <label for="option3">Abschleppservice</label>
+            </div>
+            <div class="checkbox">
+                <input type="checkbox" id="option4">
+                <label for="option4">Werkstatt/Reparatur</label>
+            </div>
+        </div>
+        
+    </div>
+    <button id="next-button">Nächste Frage</button>
     <script src="erstattung.js"></script>
+    
 </body>
 </html>

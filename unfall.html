@@ -7,19 +7,28 @@
     <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
-    <div id="quiz">
-        <h1>Legal Tech Vergleichsportal</h1>
-        <div id="question">
-            <p id="question-text">Frage 2: Haben Sie Schuld am Unfall?</p>
+    <div class="quiz-container">
+        <div class="logo-container">
+            <div class="logo"><img src="logo.png" alt="Logo von HI Right" height=500px width=500px></div>
+        </div> 
+        <div class="question">
+            <p>Hatte ich Schuld am Unfall?</p>
         </div>
-        <div id="answers">
-            <input type="radio" name="answer" value="1">Ja<br>
-            <input type="radio" name="answer" value="2">Nein<br>
-            <input type="radio" name="answer" value="3">Nicht sicher<br>
+        <div class="icon-container">
+            <a href="erstattung.html">
+                <i class="fas fa-camera icon"></i>
+                <p class="explanation">Ja</p>
+            </a>
+            <a href="erstattung.html">
+                <i class="fas fa-bicycle icon"></i>
+                <p class="explanation">Ich doch nicht!</p>
+            </a>
+            <a href="seite2.html">
+                <i class="fas fa-book icon"></i>
+                <p class="explanation">Nicht sicher</p>
+            </a>
         </div>
-        <button id="next-button">Nächste Frage</button>
     </div>
 
-    <script src="unfall.js"></script>
 </body>
 </html>

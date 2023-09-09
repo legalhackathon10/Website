@@ -7,19 +7,51 @@
     <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
-    <div id="quiz">
-        <h1>Legal Tech Vergleichsportal</h1>
-        <div id="question">
-            <p id="question-text">Frage 1: Welche Art von rechtlichen Dienstleistungen benötigen Sie?</p>
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a href="#">Über Uns</a>
+        <a href="#">Impressum</a>
+        <!-- Fügen Sie die Kreise und Flaggen hier ein -->
+        <div class="circle-container">
+            <div class="circle">
+                <img src="de_flag.png" alt="Deutschland Flagge" class="flag">
+            </div>
+            <div class="circle">
+                <img src="flag2.png" alt="Flagge 2" class="flag">
+            </div>
+            <div class="circle">
+                <img src="flag3.png" alt="Flagge 3" class="flag">
+            </div>
         </div>
-        <div id="answers">
-            <input type="radio" name="answer" value="1">Verkehr<br>
-            <input type="radio" name="answer" value="2">Vertragsbeendigung<br>
-            <input type="radio" name="answer" value="3">Glücksspiel<br>
-            <input type="radio" name="answer" value="4">Mieten/Wohnen<br>
-        </div>
-        <button id="next-button">Nächste Frage</button>
     </div>
-    <script src="script.js"></script>
+
+
+    <div class="quiz-container">
+        <div class="logo-container">
+            <div class="logo"><img src="logo.png" alt="Logo von HI Right" height=500px width=500px></div>
+        </div> 
+        <div class="question">
+            <p>In welchem Bereich haben Sie ein Problem?</p>
+        </div>
+        <div class="icon-container">
+            <a href="verkehr.html">
+                <i class="fas fa-camera icon"></i>
+                <p class="explanation">Verkehr</p>
+            </a>
+            <a href="seite2.html">
+                <i class="fas fa-bicycle icon"></i>
+                <p class="explanation">Vertragsbeendigung</p>
+            </a>
+            <a href="seite2.html">
+                <i class="fas fa-book icon"></i>
+                <p class="explanation">Glücksspiel</p>
+            </a>
+            <a href="seite2.html">
+                <i class="fas fa-coffee icon"></i>
+                <p class="explanation">Mieten/Wohnen</p>
+            </a>
+        </div>
+    </div>
+
 </body>
 </html>

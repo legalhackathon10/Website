@@ -1,13 +1,4 @@
-<!Doctype html>
-<html lang="de">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="stylesheet.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rechtsgebiet 1</title>
-  </head>
-
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -16,19 +7,48 @@
     <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
-    <div id="quiz">
-        <h1>Legal Tech Vergleichsportal</h1>
-        <div id="question">
-            <p id="question-text">Frage 1: Um welches Verkehrsmittel handelt es sich?</p>
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a href="#">Über Uns</a>
+        <a href="#">Impressum</a>
+        <!-- Fügen Sie die Kreise und Flaggen hier ein -->
+        <div class="circle-container">
+            <div class="circle">
+                <img src="de_flag.png" alt="Deutschland Flagge" class="flag">
+            </div>
+            <div class="circle">
+                <img src="flag2.png" alt="Flagge 2" class="flag">
+            </div>
+            <div class="circle">
+                <img src="flag3.png" alt="Flagge 3" class="flag">
+            </div>
         </div>
-        <div id="answers">
-            <input type="radio" name="answer" value="1">Pkw<br>
-            <input type="radio" name="answer" value="2">LKW<br>
-            <input type="radio" name="answer" value="3">Fahrrad<br>
-            <input type="radio" name="answer" value="4">Motorrad<br>
+    </div>
+    <div class="quiz-container">
+        <div class="logo-container">
+            <div class="logo"><img src="logo.png" alt="Logo von HI Right" height=500px width=500px></div>
+        </div> 
+        <div class="question">
+            <p>Um welches Verkehrsmittel handelt es sich?</p>
         </div>
-        <button id="next-button">Nächste Frage</button>
-        
+        <div class="icon-container">
+            <a href="wagenbesitz.html">
+                <i class="fas fa-camera icon"></i>
+                <p class="explanation">Pkw</p>
+            </a>
+            <a href="wagenbesitz.html">
+                <i class="fas fa-bicycle icon"></i>
+                <p class="explanation">Lkw</p>
+            </a>
+            <a href="seite2.html">
+                <i class="fas fa-book icon"></i>
+                <p class="explanation">Fahrrad</p>
+            </a>
+            <a href="seite2.html">
+                <i class="fas fa-book icon"></i>
+                <p class="explanation">Motorrad</p>
+            </a>
+        </div>
     </div>
     <script src="verkehr.js"></script>
 </body>
