@@ -7,28 +7,15 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-image: linear-gradient(45deg, #FF6B6B, #FFD166, #06D6A0, #277DA1);
-            background-size: 400% 400%;
-            animation: gradient 15s ease infinite;
+            background-color: #044557; /* Pastellblau */
             color: #000; /* Schwarze Textfarbe */
             margin: 0;
-        }
-
-        @keyframes gradient {
-            0% {
-                background-position: 0% 50%;
-            }
-            50% {
-                background-position: 100% 50%;
-            }
-            100% {
-                background-position: 0% 50%;
-            }
         }
 
         .navbar {
             display: flex;
             justify-content: flex-end;
+            align-items: center; /* Zentriert die Kreise vertikal */
             padding: 10px;
             background-color: rgba(255, 255, 255, 0.2); /* Hintergrund mit Transparenz für die Navigationsleiste */
             margin-bottom: 20px; /* Hinzugefügter Abstand nach unten */
@@ -41,111 +28,144 @@
             position: relative;
         }
 
-        /* Animierte Linie unter den Links */
-        .navbar a::after {
-            content: "";
-            position: absolute;
-            width: 0;
-            height: 2px;
-            background-color: #000; /* Schwarze Linie */
-            left: 0;
-            bottom: -5px;
-            transition: width 0.3s ease;
-        }
-
-        .navbar a:hover::after {
-            width: 100%;
+        /* Entfernen Sie den blauen Strich unter dem Link */
+        a {
+            text-decoration: none;
         }
 
         .quiz-container {
-            max-width: 400px;
-            margin: 0 auto;
-            background-color: rgba(255, 255, 255, 0.8); /* Hintergrund mit Transparenz für den Container */
+            max-width: 100%; /* Container passt sich der Bildschirmgröße an */
             padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8); /* Hintergrund mit Transparenz für den Container */
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center; /* Zentriert den Inhalt horizontal */
         }
+
         h1 {
             text-align: center;
             color: #000; /* Schwarzer Text */
         }
+
         .question {
             text-align: center;
             margin-bottom: 20px;
         }
+
         .question p {
             font-size: 18px;
         }
+
         .icon-container {
             display: flex;
+            flex-wrap: wrap; /* Zeilenumbruch für Icon-Container */
             justify-content: center;
-            align-items: center; /* Zentriert den Text vertikal */
         }
+
         .icon {
             font-size: 36px;
+            width: 100px; /* Breite des Icons */
+            height: 100px; /* Höhe des Icons */
             margin: 20px; /* Erhöhter Margin-Wert für mehr Platz zwischen den Icons */
             cursor: pointer;
+            background-color: #7ed957; /* Grün für den Hintergrund */
+            color: #fff; /* Weiß für die Zeichen */
+            border-radius: 8px; /* Runde Form für das Icon */
+            padding: 10px; /* Erhöhter Padding für das Icon */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
             transition: transform 0.2s ease-in-out;
         }
+
         .icon:hover {
             transform: scale(1.1);
         }
+
         .explanation {
             text-align: center;
         }
-        /* Logo-Stile */
-        .logo-container {
-            position: absolute;
-            top: 10px;
-            left: 10px;
+
+        /* Stile für die Kreise */
+        .circle-container {
+            display: flex;
+            align-items: center; /* Zentriert die Kreise vertikal */
+        }
+
+        .circle {
+            width: 30px; /* Kleinerer Durchmesser für die Kreise */
+            height: 30px; /* Kleinerer Durchmesser für die Kreise */
+            background-color: #fff;
+            border-radius: 50%; /* Kreisform */
+            margin-left: 10px;
             display: flex;
             align-items: center;
+            justify-content: center;
+        }
+
+        /* Stile für die Flaggenbilder */
+        .flag {
+            width: 20px;
+            height: 20px;
+            object-fit: cover;
+        }
+
+        /* Logo-Stile */
+        .logo-container {
+            text-align: center; /* Zentriert den Inhalt horizontal */
         }
 
         .logo {
             font-size: 24px;
             font-weight: bold;
-            margin-right: 5px;
+            margin-bottom: 10px; /* Abstand unter dem Logo */
         }
     </style>
 </head>
 <body>
-    <div class="logo-container">
-        <div class="logo">HI Right</div>
-        <!-- Fügen Sie hier Ihr Logo ein -->
-        <!-- Beispiel: <img src="logo.png" alt="Recht einfach Logo" width="30" height="30"> -->
-    </div>
-    
     <div class="navbar">
         <a href="#">Home</a>
         <a href="#">Über Uns</a>
         <a href="#">Impressum</a>
+        <!-- Fügen Sie die Kreise und Flaggen hier ein -->
+        <div class="circle-container">
+            <div class="circle">
+                <img src="de_flag.png" alt="Deutschland Flagge" class="flag">
+            </div>
+            <div class="circle">
+                <img src="flag2.png" alt="Flagge 2" class="flag">
+            </div>
+            <div class="circle">
+                <img src="flag3.png" alt="Flagge 3" class="flag">
+            </div>
+        </div>
     </div>
 
     <div class="quiz-container">
-        <h1>HI Right</h1>
+        <div class="logo-container">
+            <div class="logo"><img src="thumbnail.jpg" alt="Logo von HI Right" height=40px width=40px></div>
+        </div> 
         <div class="question">
-            <p>Was ist dein Problem?</p>
-            <div class="icon-container">
-                <a href="seite2.html">
-                    <i class="fas fa-camera icon"></i>
-                    <p class="explanation">Kamera</p>
-                </a>
-                <a href="seite2.html">
-                    <i class="fas fa-bicycle icon"></i>
-                    <p class="explanation">Fahrrad</p>
-                </a>
-            </div>
-            <div class="icon-container">
-                <a href="seite2.html">
-                    <i class="fas fa-book icon"></i>
-                    <p class="explanation">Buch</p>
-                </a>
-                <a href="seite2.html">
-                    <i class="fas fa-coffee icon"></i>
-                    <p class="explanation">Kaffee</p>
-                </a>
-            </div>
+            <p>Hallo?</p>
+        </div>
+        <div class="icon-container">
+            <a href="seite2.html">
+                <i class="fas fa-camera icon"></i>
+                <p class="explanation">Kamera</p>
+            </a>
+            <a href="seite2.html">
+                <i class="fas fa-bicycle icon"></i>
+                <p class="explanation">Fahrrad</p>
+            </a>
+            <a href="seite2.html">
+                <i class="fas fa-book icon"></i>
+                <p class="explanation">Buch</p>
+            </a>
+            <a href="seite2.html">
+                <i class="fas fa-coffee icon"></i>
+                <p class="explanation">Kaffee</p>
+            </a>
         </div>
     </div>
 </body>
