@@ -24,16 +24,22 @@
             </div>
         </div>
     </div>
-    <div id="quiz">
-        <h1>Legal Tech Vergleichsportal</h1>
-        <div id="question">
-            <p id="question-text">Wie sind Sie versichert?</p>
+    <div class="quiz-container">
+        <div class="logo-container">
+            <div class="logo"><img src="logo.png" alt="Logo von HI Right" height=500px width=500px></div>
+        </div> 
+        <div class="question">
+            <p>Wie sind Sie versichert?</p>
         </div>
-        <div id="answers">
-            <input type="radio" name="answer" value="1">Haftpflichtversicherung oder Voll/Teilkasko<br>
-            <input type="radio" name="answer" value="2">Rechtsschutzversicherung<br>
+        <div class="icon-container">
+            <a href="results.html">
+                <i class="fas fa-camera icon"></i>
+                <p class="explanation">Haftpflichtversicherung &nbsp;&nbsp;&nbsp;<br> oder Voll/Teilkasko</p>
+            </a>
+            <a href="results.html">
+                <i class="fas fa-bicycle icon"></i>
+                <p class="explanation">Rechtsschutzversicherung</p>
         </div>
-        <button id="next-button">Nächste Frage</button>
     </div>
     <script src="versicherung.js"></script>
 </body>
