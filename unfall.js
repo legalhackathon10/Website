@@ -29,7 +29,7 @@ function displayQuestion() {
 
 function reffer(answerValue) {
     // Automatische Weiterleitung nach 5 Sekunden
-    if (answerValue === "1") {
+    if (answerValue === "2") {
         setTimeout(function () {
             window.location.href = "erstattung.html";
         }, 1000);
