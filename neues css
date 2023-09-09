@@ -1,0 +1,81 @@
+/* Reset some default styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Serious background color */
+}
+
+/* Style the header */
+header {
+    background-color: #333; /* Dark header background color */
+    color: #fff; /* Header text color */
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+    position: relative; /* Relative positioning for subheader lines */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Style the animated lines under subheaders */
+nav ul li::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #fff; /* Line color */
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    transition: width 0.3s ease; /* Animation transition */
+}
+
+nav ul li:hover::after {
+    width: 100%; /* Fully display the line on hover */
+}
+
+/* Style the main content */
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.category {
+    margin: 20px;
+    text-align: center;
+}
+
+.category img {
+    max-width: 100px; /* Adjust image size */
+}
+
+/* Style the footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
