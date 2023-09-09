@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legal Tech Vergleichsportal</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <div id="quiz">
+        <h1>Legal Tech Vergleichsportal</h1>
+        <div id="question">
+            <p id="question-text">Frage 1: Welche Art von rechtlichen Dienstleistungen benötigen Sie?</p>
+        </div>
+        <div id="answers">
+            <input type="radio" name="answer" value="Firma 1">Firma 1<br>
+            <input type="radio" name="answer" value="Firma 2">Firma 2<br>
+            <input type="radio" name="answer" value="Firma 3">Firma 3<br>
+            <input type="radio" name="answer" value="Firma 4">Firma 4<br>
+        </div>
+        <button id="next-button">Nächste Frage</button>
+        <div id="results" style="display: none;">
+            <p id="result-text">Basierend auf Ihren Antworten empfehlen wir Ihnen folgende Firma:</p>
+            <p id="recommended-company"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
