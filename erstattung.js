@@ -1,15 +1,15 @@
 const questions = [
-    "Welche Art von rechtlichen Dienstleistungen benötigen Sie?",
+    "Welche Leistungen brauchen Sie?",
     // Fügen Sie hier weitere Fragen hinzu
 ];
 
 let currentQuestionIndex = 0;
 
 document.getElementById("next-button").addEventListener("click", function () {
-    const selectedAnswer = document.querySelector('input[name="answer"]:checked');
+    const selectedAnswer = document.querySelector('input[type="checkbox"]:checked');
 
     if (selectedAnswer) {
-        const answerValue = selectedAnswer.value;
+        const answerValue = selectedAnswer.id;
         // Speichern Sie die Antwort oder bewerten Sie sie nach Ihren Kriterien.
 
         currentQuestionIndex++;
@@ -25,6 +25,7 @@ document.getElementById("next-button").addEventListener("click", function () {
 
 function displayQuestion() {
     // Hier sollten Sie den Code hinzufügen, um die Frage anzuzeigen
+    // Zum Beispiel: document.querySelector('.question p').textContent = questions[currentQuestionIndex];
 }
 
 function reffer(answerValue) {
@@ -32,6 +33,6 @@ function reffer(answerValue) {
     if (answerValue != "") {
         setTimeout(function () {
             window.location.href = "versicherung.html";
-        }, 0);
-    } 
+        }, 0); // Weiterleitung nach 5 Sekunden
+    }
 }
