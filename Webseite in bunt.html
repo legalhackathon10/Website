@@ -7,23 +7,9 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-image: linear-gradient(45deg, #FF6B6B, #FFD166, #06D6A0, #277DA1);
-            background-size: 400% 400%;
-            animation: gradient 15s ease infinite;
+            background-color: #a0c8d6; /* Pastellblau */
             color: #000; /* Schwarze Textfarbe */
             margin: 0;
-        }
-
-        @keyframes gradient {
-            0% {
-                background-position: 0% 50%;
-            }
-            50% {
-                background-position: 100% 50%;
-            }
-            100% {
-                background-position: 0% 50%;
-            }
         }
 
         .navbar {
@@ -41,58 +27,69 @@
             position: relative;
         }
 
-        /* Animierte Linie unter den Links */
+        /* Entfernen Sie die animierte Linie unter den Links */
         .navbar a::after {
             content: "";
             position: absolute;
             width: 0;
-            height: 2px;
-            background-color: #000; /* Schwarze Linie */
+            height: 0;
             left: 0;
             bottom: -5px;
-            transition: width 0.3s ease;
-        }
-
-        .navbar a:hover::after {
-            width: 100%;
         }
 
         .quiz-container {
-            max-width: 400px;
-            margin: 0 auto;
-            background-color: rgba(255, 255, 255, 0.8); /* Hintergrund mit Transparenz für den Container */
+            max-width: 100%; /* Container passt sich der Bildschirmgröße an */
             padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8); /* Hintergrund mit Transparenz für den Container */
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
+
         h1 {
             text-align: center;
             color: #000; /* Schwarzer Text */
         }
+
         .question {
             text-align: center;
             margin-bottom: 20px;
         }
+
         .question p {
             font-size: 18px;
         }
+
         .icon-container {
             display: flex;
+            flex-wrap: wrap; /* Zeilenumbruch für Icon-Container */
             justify-content: center;
-            align-items: center; /* Zentriert den Text vertikal */
         }
+
         .icon {
             font-size: 36px;
+            width: 100px; /* Breite des Icons */
+            height: 100px; /* Höhe des Icons */
             margin: 20px; /* Erhöhter Margin-Wert für mehr Platz zwischen den Icons */
             cursor: pointer;
+            background-color: #7ed957; /* Grün für den Hintergrund */
+            color: #fff; /* Weiß für die Zeichen */
+            border-radius: 8px; /* Runde Form für das Icon */
+            padding: 10px; /* Erhöhter Padding für das Icon */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
             transition: transform 0.2s ease-in-out;
         }
+
         .icon:hover {
             transform: scale(1.1);
         }
+
         .explanation {
             text-align: center;
         }
+
         /* Logo-Stile */
         .logo-container {
             position: absolute;
@@ -135,8 +132,6 @@
                     <i class="fas fa-bicycle icon"></i>
                     <p class="explanation">Fahrrad</p>
                 </a>
-            </div>
-            <div class="icon-container">
                 <a href="seite2.html">
                     <i class="fas fa-book icon"></i>
                     <p class="explanation">Buch</p>
