@@ -1,0 +1,23 @@
+/* Beispiel-CSS für Tabs */
+.tabs {
+    width: 400px; /* Breite der Tabs */
+  }
+  
+  .tab-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Horizontale Anordnung der Registerkarten */
+  }
+  
+  .tab-links li {
+    margin-right: 10px; /* Abstand zwischen den Registerkarten */
+  }
+  
+  .tab-content {
+    display: none; /* Verstecke alle Tab-Inhalte */
+  }
+  
+  .tab-content.active {
+    display: block; /* Zeige den aktiven Tab-Inhalt */
+  }
