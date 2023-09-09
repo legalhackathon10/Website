@@ -7,7 +7,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #e8efde; /* Pastellblau */
+            background-color: #044557; /* Pastellblau */
             color: #000; /* Schwarze Textfarbe */
             margin: 0;
         }
@@ -39,6 +39,7 @@
             background-color: rgba(255, 255, 255, 0.8); /* Hintergrund mit Transparenz für den Container */
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center; /* Zentriert den Inhalt horizontal */
         }
 
         h1 {
@@ -86,21 +87,6 @@
             text-align: center;
         }
 
-        /* Logo-Stile */
-        .logo-container {
-            position: absolute;
-            top: 10px;
-            left: 10px;
-            display: flex;
-            align-items: center;
-        }
-
-        .logo {
-            font-size: 24px;
-            font-weight: bold;
-            margin-right: 5px;
-        }
-
         /* Stile für die Kreise */
         .circle-container {
             display: flex;
@@ -124,15 +110,20 @@
             height: 20px;
             object-fit: cover;
         }
+
+        /* Logo-Stile */
+        .logo-container {
+            text-align: center; /* Zentriert den Inhalt horizontal */
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px; /* Abstand unter dem Logo */
+        }
     </style>
 </head>
 <body>
-    <div class="logo-container">
-        <div class="logo">HI Right</div>
-        <!-- Fügen Sie hier Ihr Logo ein -->
-        <!-- Beispiel: <img src="logo.png" alt="Recht einfach Logo" width="30" height="30"> -->
-    </div>
-    
     <div class="navbar">
         <a href="#">Home</a>
         <a href="#">Über Uns</a>
@@ -152,27 +143,29 @@
     </div>
 
     <div class="quiz-container">
-        <h1>HI Right</h1>
+        <div class="logo-container">
+            <div class="logo"><img src="thumbnail.jpg" alt="Logo von HI Right" height=40px width=40px></div>
+        </div> 
         <div class="question">
-            <p>Was ist dein Problem?</p>
-            <div class="icon-container">
-                <a href="seite2.html">
-                    <i class="fas fa-camera icon"></i>
-                    <p class="explanation">Kamera</p>
-                </a>
-                <a href="seite2.html">
-                    <i class="fas fa-bicycle icon"></i>
-                    <p class="explanation">Fahrrad</p>
-                </a>
-                <a href="seite2.html">
-                    <i class="fas fa-book icon"></i>
-                    <p class="explanation">Buch</p>
-                </a>
-                <a href="seite2.html">
-                    <i class="fas fa-coffee icon"></i>
-                    <p class="explanation">Kaffee</p>
-                </a>
-            </div>
+            <p>Hallo?</p>
+        </div>
+        <div class="icon-container">
+            <a href="seite2.html">
+                <i class="fas fa-camera icon"></i>
+                <p class="explanation">Kamera</p>
+            </a>
+            <a href="seite2.html">
+                <i class="fas fa-bicycle icon"></i>
+                <p class="explanation">Fahrrad</p>
+            </a>
+            <a href="seite2.html">
+                <i class="fas fa-book icon"></i>
+                <p class="explanation">Buch</p>
+            </a>
+            <a href="seite2.html">
+                <i class="fas fa-coffee icon"></i>
+                <p class="explanation">Kaffee</p>
+            </a>
         </div>
     </div>
 </body>
