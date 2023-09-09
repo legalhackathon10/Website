@@ -32,10 +32,10 @@ function reffer(answerValue) {
     if (answerValue === "1") {
         setTimeout(function () {
             window.location.href = "results.html";
-        }, 1000);
+        }, 0);
     } else if (answerValue === "2") {
         setTimeout(function () {
             window.location.href = "results.html";
-        }, 1000);
+        }, 0);
     } 
 }

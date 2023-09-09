@@ -32,6 +32,6 @@ function reffer(answerValue) {
     if (answerValue === "2") {
         setTimeout(function () {
             window.location.href = "erstattung.html";
-        }, 1000);
+        }, 0);
     } 
 }

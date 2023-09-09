@@ -32,14 +32,14 @@ function reffer(answerValue) {
     if (answerValue === "1") {
         setTimeout(function () {
             window.location.href = "unfall.html";
-        }, 1000);
+        }, 0);
     } else if (answerValue === "2") {
         setTimeout(function () {
             window.location.href = "bußgeld.html";
-        }, 1000);
+        }, 0);
     } else if (answerValue === "3") {
         setTimeout(function () {
             window.location.href = "abgasskandal.html";
-        }, 1000);
+        }, 0);
     }
 }

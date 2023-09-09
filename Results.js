@@ -1,5 +1,5 @@
 <script>
 function redirectToWebsite(providerName, websiteUrl) {
-    window.location.href = websiteUrl;
+    window.location.href = websiteUrl
 }
 </script>

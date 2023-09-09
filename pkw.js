@@ -32,6 +32,6 @@ function reffer(answerValue) {
     if (answerValue === "1") {
         setTimeout(function () {
             window.location.href = "wagenbesitz.html";
-        }, 1000);
+        }, 0);
     } 
 }
