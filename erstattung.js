@@ -29,21 +29,9 @@ function displayQuestion() {
 
 function reffer(answerValue) {
     // Automatische Weiterleitung nach 5 Sekunden
-    if (answerValue === "1") {
+    if (answerValue != "") {
         setTimeout(function () {
-            window.location.href = "verkehr.html";
+            window.location.href = "versicherung.html";
         }, 0);
-    } else if (answerValue === "2") {
-        setTimeout(function () {
-            window.location.href = "vertragsbeendigung.html";
-        }, 0);
-    } else if (answerValue === "3") {
-        setTimeout(function () {
-            window.location.href = "glucksspiel.html";
-        }, 0);
-    } else if (answerValue === "4") {
-        setTimeout(function () {
-            window.location.href = "mieten.html";
-        }, 0);
-    }
+    } 
 }
