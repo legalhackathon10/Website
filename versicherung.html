@@ -5,46 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Legal Tech Vergleichsportal</title>
     <link rel="stylesheet" href="stylesheet.css">
+    <style>
+        /* Add your CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .quiz-container {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .logo {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .question {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .icon-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .frage-container {
+            margin: 10px;
+        }
+
+        .explanation {
+            font-size: 18px;
+        }
+    </style>
 </head>
 <body>
-    <div class="navbar">
-        <a href="#">Home</a>
-        <a href="#">Über Uns</a>
-        <a href="#">Impressum</a>
-        <!-- Fügen Sie die Kreise und Flaggen hier ein -->
-        <div class="circle-container">
-            <div class="circle">
-                <img src="deflag.png" alt="Deutschland Flagge" class="flag">
-            </div>
-            <div class="circle">
-                <img src="usflag.png" alt="Flagge 2" class="flag">
-            </div>
-            <div class="circle">
-                <img src="chinaflag.png" alt="Flagge 3" class="flag">
-            </div>
-        </div>
-    </div>
     <div class="quiz-container">
         <div class="logo-container">
-            <div class="logo"><img src="logo.png" alt="Logo von HI Right" height=500px width=500px></div>
-        </div> 
+            <div class="logo"><img src="logo.png" alt="Logo von HI Right" width="500" height="500"></div>
+        </div>
         <div class="question">
-            <p>Wie sind Sie versichert?</p>
+            <p>Wie bin ich versichert?</p>
         </div>
         <div class="icon-container">
-            <a href="results.html">
-                                   <div class="Haftpflichtversicherung-container">
-        <img src="Haftpflichtversicherung.png" alt="Logo" width="30" height="30">
-    </div>
-                <p class="explanation">Haftpflichtversicherung &nbsp;&nbsp;&nbsp;<br> oder Voll/Teilkasko</p>
+            <a href="results.html" class="frage-container">
+                <img src="Haftpflichtversicherung.png" alt="Haftpflichtversicherung" width="30" height="30">
+                <p class="explanation">Haftpflichtversicherung</p>
             </a>
-            <a href="results.html">
-                                   <div class="frage-container">
-        <img src="Rechtsschutzversicherung.png" alt="Logo" width="30" height="30">
-    </div>
+            <a href="results.html" class="frage-container">
+                <img src="Rechtsschutzversicherung.png" alt="Rechtschutzversicherung" width="30" height="30">
                 <p class="explanation">Rechtsschutzversicherung</p>
+            </a>
         </div>
     </div>
-    <script src="versicherung.js"></script>
 </body>
 </html>
